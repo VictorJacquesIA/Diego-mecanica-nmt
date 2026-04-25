@@ -817,10 +817,12 @@ footer {
     .hero-bg img {
         object-fit: cover !important;
         object-position: center 40% !important;
+        filter: blur(1px) !important;
+        opacity: 0.85 !important;
     }
 
     .hero-bg::after {
-        background: linear-gradient(0deg, var(--dark) 0%, rgba(15, 23, 42, 0.7) 100%) !important;
+        background: linear-gradient(0deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.45) 100%) !important;
     }
 
     .hero-content {
