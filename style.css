@@ -290,15 +290,17 @@ header.scrolled .mobile-menu-btn span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 23, 42, 0.92);
+    background: rgba(15, 23, 42, 0.78);
 }
 
 .hero-bg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 80% center;
-    opacity: 0.6;
+    object-position: center 40%;
+    opacity: 0.7;
+    filter: blur(3px);
+    transform: scale(1.05);
 }
 
 .hero-content {
@@ -814,7 +816,7 @@ footer {
 
     .hero-bg img {
         object-fit: cover !important;
-        object-position: center 30% !important;
+        object-position: center 40% !important;
     }
 
     .hero-bg::after {
@@ -1150,6 +1152,33 @@ footer {
     color: var(--gray);
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+.training-cta {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2.5rem 2rem;
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+}
+
+.training-cta h3 {
+    font-size: 1.75rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 1.75rem;
+    line-height: 1.2;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 1.75rem;
+}
+
+@media (max-width: 768px) {
+    .training-cta h3 {
+        font-size: 1.3rem;
+    }
 }
 
 .training-social {
